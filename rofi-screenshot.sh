@@ -20,17 +20,18 @@ lang_saved="Screenshot saved to file"
 # END OF LANGUAGE STRINGS
 
 rofi_delay=$(
-    echo -e "$lang_nodelay\n$lang_delay 1s\n$lang_delay 3s\n$lang_delay 5s\n$lang_delay 10s" |
+    printf "%s 1s\n%s 3s\n%s 5s\n%s 10s\n%s\n" \
+           "$lang_delay" "$lang_delay" "$lang_delay" "$lang_delay" "$lang_nodelay" |
     rofi -dmenu -p "screenshot" -lines 5
 ) || exit 2
 
 rofi_save_method=$(
-    echo -e "$lang_save_png\n$lang_save_jpg\n$lang_copy_clipboard" |
+    printf "%s\n%s\n%s\n" "$lang_save_png" "$lang_save_jpg" "$lang_copy_clipboard" |
     rofi -dmenu -p "screenshot" -lines 3
 ) || exit 3
 
 rofi_scr_type=$(
-    echo -e "$lang_scr_whole\n$lang_scr_fragment" |
+    printf "%s\n%s\n" "$lang_scr_whole" "$lang_scr_fragment" |
     rofi -dmenu -p "screenshot" -lines 2
 ) || exit 4
 
