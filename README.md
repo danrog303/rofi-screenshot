@@ -23,5 +23,10 @@ Before you use this application, you need to install the following dependencies 
 4. Give rofi-screenshot.sh execution rights by running `chmod a+x rofi-screenshot.sh`
 5. Run rofi-screenshot.sh to open screenshot taking tool (or assign the script to a keyboard shortcut to have it always at hand)
 
+## Screenshots
+<img alt="Screenshot: rofi-screenshot" src="https://user-images.githubusercontent.com/32397526/148370014-757b1059-3dff-4509-80e0-5db7527eacba.png" width="400">
+<img alt="Screenshot: rofi-screenshot" src="https://user-images.githubusercontent.com/32397526/148370019-414ae950-4c3a-4c4a-a4c5-9ba4cdb3960c.png" width="400">
+<img alt="Screenshot: rofi-screenshot" src="https://user-images.githubusercontent.com/32397526/148370021-31c5bd97-a76b-4294-9d73-e8144bf65499.png" width="400">
+
 ## Technologies used
 This script has been written in pure POSIX-compliant Linux shell (`/bin/sh`). Script should run on any Linux distribution where all required dependencies can be installed.
