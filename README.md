@@ -1,14 +1,25 @@
-# rofi-screenshot
-> Script for taking screenshots on minimalist Linux distributions.
+# rofi-screenshot-wayland
+> Script for taking screenshots on minimalist Linux distributions. Now with support for wlroots based wayland compositors (such as Sway)
+
+Forked from [rofi-screenshot](https://github.com/danrog303/rofi-screenshot).
 
 ## Features
 1. Using rofi to display screenshot taking menu
-2. Allows to take screenshot of whole screen or only selected region (region can be selected using mouse)
-3. Saving image as JPG, PNG or copying screenshot to clipboard
+2. Allows to take screenshot of whole screen, only selected region (region can be selected using mouse)
+3. In the wayland version, screenshots can also be taken of selected window (using mouse), or the currently active monitor. 
+4. Saving image as JPG, PNG or copying screenshot to clipboard
 
 ## Dependencies
 Before you use this application, you need to install the following dependencies - either using your package manager (like apt, pacman) or by manually compiling source codes.
 
+### Wayland
+The following dependencies are required for Wayland version:
+- rofi (for displaying menus)
+- grimshot (for taking the screenshot)
+- imagemagick (for converting screenshots to jpg)
+
+### Original
+The following are required for the X11 version:
 - rofi (for displaying menus)
 - slop (for selecting screen regions)
 - ffcast (for saving screenshots of entire screen or specified region)
@@ -19,9 +30,9 @@ Before you use this application, you need to install the following dependencies 
 ## Usage
 1. Install required dependecies.
 2. Clone this repo
-3. Copy rofi-screenshot.sh to any directory in your $PATH environmental variable
-4. Give rofi-screenshot.sh execution rights by running `chmod a+x rofi-screenshot.sh`
-5. Run rofi-screenshot.sh to open screenshot taking tool (or assign the script to a keyboard shortcut to have it always at hand)
+3. Copy the desired script (`rofi-screenshot.sh` or `rofi-screenshot-wayland.sh`) to any directory in your $PATH environmental variable
+4. Give the script execution rights by running `chmod a+x rofi-screenshot.sh` or `chmod a+x rofi-screenshot-wayland.sh`
+5. Run the script to open screenshot taking tool (or assign the script to a keyboard shortcut to have it always at hand)
 
 ## Screenshots
 <img alt="Screenshot: rofi-screenshot" src="https://user-images.githubusercontent.com/32397526/148370014-757b1059-3dff-4509-80e0-5db7527eacba.png" width="400">
