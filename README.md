@@ -1,5 +1,5 @@
 # rofi-screenshot-wayland
-> Script for taking screenshots on wlroots based wayland compositors (such as Sway)
+> Script for taking screenshots on minimalist Linux distributions. Now with support for wlroots based wayland compositors (such as Sway)
 
 Forked from [rofi-screenshot](https://github.com/danrog303/rofi-screenshot).
 
