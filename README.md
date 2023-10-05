@@ -5,8 +5,9 @@ Forked from [rofi-screenshot](https://github.com/danrog303/rofi-screenshot).
 
 ## Features
 1. Using rofi to display screenshot taking menu
-2. Allows to take screenshot of whole screen, only selected region (region can be selected using mouse), selected window (using mouse), or the currently active monitor.
-3. Saving image as JPG, PNG or copying screenshot to clipboard
+2. Allows to take screenshot of whole screen, only selected region (region can be selected using mouse)
+3. In the wayland version, screenshots can also be taken of selected window (using mouse), or the currently active monitor. 
+4. Saving image as JPG, PNG or copying screenshot to clipboard
 
 ## Dependencies
 Before you use this application, you need to install the following dependencies - either using your package manager (like apt, pacman) or by manually compiling source codes.
