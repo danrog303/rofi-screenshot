@@ -1,19 +1,18 @@
-# rofi-screenshot
-> Script for taking screenshots on minimalist Linux distributions.
+# rofi-screenshot-wayland
+> Script for taking screenshots on wlroots based wayland compositors (such as Sway)
+
+Forked from [rofi-screenshot](https://github.com/danrog303/rofi-screenshot).
 
 ## Features
 1. Using rofi to display screenshot taking menu
-2. Allows to take screenshot of whole screen or only selected region (region can be selected using mouse)
+2. Allows to take screenshot of whole screen, only selected region (region can be selected using mouse), selected window (using mouse), or the currently active monitor.
 3. Saving image as JPG, PNG or copying screenshot to clipboard
 
 ## Dependencies
 Before you use this application, you need to install the following dependencies - either using your package manager (like apt, pacman) or by manually compiling source codes.
 
 - rofi (for displaying menus)
-- slop (for selecting screen regions)
-- ffcast (for saving screenshots of entire screen or specified region)
-- xclip (for copying image to clipboard)
-- libnotify (for sending desktop notifications)
+- grimshot (for taking the screenshot)
 - imagemagick (for converting screenshots to jpg)
 
 ## Usage
